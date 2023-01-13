@@ -26,7 +26,7 @@
                 html += '<td><input type="number" idx="' + number + '" class="form-control origin" /></td>';
                 html += '<td><input type="number" idx="' + number + '" class="form-control real" /></td>';
                 if (number > 0) {
-                    html += '<td><button type="button" name="remove" id="" class="btn btn-danger remove">Remove</button></td></tr>';
+                    html += '<td><button type="button" name="remove" id="" class="btn btn-danger remove">Del</button></td></tr>';
                     $('tbody').append(html);
                 }
                 else {
@@ -81,7 +81,6 @@
             });
 
             $(document).on('click', '.remove', function () {
-                count--;
                 $(this).closest("tr").remove();
             });
 
@@ -130,7 +129,7 @@
                     <tr>
                         <th width="35%">재료</th>
                         <th width="35%">레시피</th>
-                        <th width="35%">실제양</th>
+                        <th width="35%">실제량</th>
                         <th width="30%">추가</th>
                     </tr>
                 </thead>
