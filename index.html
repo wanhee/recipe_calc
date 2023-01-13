@@ -22,6 +22,7 @@
 
             function dynamic_field(number) {
                 html = '<tr>';
+                html += '<td><input type="text" class="form-control" /></td>';
                 html += '<td><input type="number" idx="' + number + '" class="form-control origin" /></td>';
                 html += '<td><input type="number" idx="' + number + '" class="form-control real" /></td>';
                 if (number > 0) {
@@ -127,9 +128,10 @@
             <table class="table table-bordered table-striped" id="user_table">
                 <thead>
                     <tr>
+                        <th width="35%">재료</th>
                         <th width="35%">레시피 재료 양</th>
                         <th width="35%">실제 양</th>
-                        <th width="30%">재료 추가</th>
+                        <th width="30%">추가</th>
                     </tr>
                 </thead>
                 <tbody>
